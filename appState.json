@@ -1,0 +1,118 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "41b68207-e13b-47f6-8ced-93481a2ead94": {
+        "id": "41b68207-e13b-47f6-8ced-93481a2ead94",
+        "parent": null,
+        "name": "frankfurttesty",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "aa50a4de-2b6b-4151-99c5-b5ccd2b81b74"
+        ],
+        "isRemovable": false,
+        "filePath": "frankfurttesty"
+      },
+      "aa50a4de-2b6b-4151-99c5-b5ccd2b81b74": {
+        "id": "aa50a4de-2b6b-4151-99c5-b5ccd2b81b74",
+        "parent": "41b68207-e13b-47f6-8ced-93481a2ead94",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "frankfurttesty/lambda.js",
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigeuCentral1californiacheckany",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "295ecd27-dcb5-4f81-acf0-b104cacd42a2": {
+            "id": "295ecd27-dcb5-4f81-acf0-b104cacd42a2",
+            "name": "Test event",
+            "functionId": "aa50a4de-2b6b-4151-99c5-b5ccd2b81b74",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "rootNode": "41b68207-e13b-47f6-8ced-93481a2ead94",
+    "openFiles": [
+      "aa50a4de-2b6b-4151-99c5-b5ccd2b81b74"
+    ],
+    "currentFileId": "aa50a4de-2b6b-4151-99c5-b5ccd2b81b74",
+    "resources": {
+      "apigeuCentral1californiacheckany": {
+        "name": "apigeuCentral1californiacheckany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-central-1",
+          "apiMode": 1,
+          "apiName": "california",
+          "apiId": "p8eirhyd7k",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "vi6xlt1lei",
+          "existingResources": {
+            "/check/cal": "batevx",
+            "/check": "pcpvxf",
+            "/": "vi6xlt1lei"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/check",
+          "resourceName": "check",
+          "resourceId": "pcpvxf",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "test",
+          "stageDeploymentId": "d3cmtb",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "frankfurttesty",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-central-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1579680570199
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "frankfurttesty",
+      "url": "https://github.com/Indunil1992/frankfurttesty"
+    }
+  }
+}
